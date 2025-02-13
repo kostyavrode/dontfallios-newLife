@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-    public UniWebView uniWebView;
     public static UIController instance;
     [SerializeField] private GameObject startPanel;
     [SerializeField] private TMP_Text bestScoreBar;
@@ -18,6 +17,8 @@ public class UIController : MonoBehaviour
     [SerializeField] public GameObject shopPanel;
     [SerializeField] private TMP_Text winMoney;
     [SerializeField] private TMP_Text loseMoney;
+    [SerializeField] private GameObject inGamePanel;
+
     public static Action onScoreChange;
     public int currentScore;
     private int moneyDelta;
@@ -68,6 +69,7 @@ public class UIController : MonoBehaviour
         {
             return;
         }
+        inGamePanel.SetActive(false);
         moneyDelta = PlayerPrefs.GetInt("money") - moneyDelta;
         loseMoney.text = moneyDelta.ToString();
         deathPanel.SetActive(true);
