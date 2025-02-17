@@ -100,8 +100,20 @@ public class UIController : MonoBehaviour
         shopPanel.SetActive(false);
         startPanel.SetActive(true);
     }
+
+    public void PauseButton()
+    {
+        Time.timeScale = 0;
+        
+    }
+
+    public void UnPauseButton()
+    {
+        Time.timeScale = 1;
+    }
     public void Restart()
     {
+        LevelSpawner.Instance.Restart();
         isMoneyChecked = false;
         winPanel.SetActive(false);
         deathPanel.SetActive(false);
