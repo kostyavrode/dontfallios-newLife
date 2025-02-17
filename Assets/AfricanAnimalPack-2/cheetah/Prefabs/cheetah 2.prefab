@@ -893,6 +893,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400050}
   - component: {fileID: 11100000}
+  - component: {fileID: 8597611361131717370}
   m_Layer: 0
   m_Name: cheetah 2
   m_TagString: Untagged
@@ -928,7 +929,7 @@ Animation:
   m_GameObject: {fileID: 100050}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: a3ae0ed8ef568884bbeb9b2468cb2f90, type: 3}
+  m_Animation: {fileID: 7400016, guid: a3ae0ed8ef568884bbeb9b2468cb2f90, type: 3}
   m_Animations:
   - {fileID: 7400000, guid: a3ae0ed8ef568884bbeb9b2468cb2f90, type: 3}
   - {fileID: 7400002, guid: a3ae0ed8ef568884bbeb9b2468cb2f90, type: 3}
@@ -963,6 +964,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &8597611361131717370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9784668721f4e574eb44cb6566ebbdd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 11100000}
 --- !u!1 &100052
 GameObject:
   m_ObjectHideFlags: 0

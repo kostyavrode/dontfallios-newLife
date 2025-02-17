@@ -14,6 +14,8 @@ public class PlayerModelController : MonoBehaviour
     private int index;
     private bool isModelBrought;
 
+    public GameObject notEnough;
+
     public GameObject[] Models
     {
         get { return models; }
@@ -105,6 +107,10 @@ public class PlayerModelController : MonoBehaviour
             PlayerPrefs.Save();
             CheckBuy();
             UpdateMoney();
+        }
+        else
+        {
+            notEnough.SetActive(true);
         }
     }
     private int GetPrice()

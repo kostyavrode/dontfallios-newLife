@@ -446,6 +446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 400022}
   - component: {fileID: 11100000}
+  - component: {fileID: -3838189866623252929}
   m_Layer: 0
   m_Name: Buffalo
   m_TagString: Untagged
@@ -462,8 +463,8 @@ Transform:
   m_GameObject: {fileID: 100022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.90242434, y: 0.52173114, z: 0.45101476}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.921, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 400064}
@@ -481,8 +482,9 @@ Animation:
   m_GameObject: {fileID: 100022}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
+  m_Animation: {fileID: 7400024, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   m_Animations:
+  - {fileID: 7400024, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400000, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400002, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400004, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
@@ -495,7 +497,6 @@ Animation:
   - {fileID: 7400018, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400020, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400022, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
-  - {fileID: 7400024, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400026, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400028, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
   - {fileID: 7400030, guid: b19e62aa3ad170c4bb99d4b5fb635b1c, type: 3}
@@ -506,6 +507,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &-3838189866623252929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9784668721f4e574eb44cb6566ebbdd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 11100000}
 --- !u!1 &100024
 GameObject:
   m_ObjectHideFlags: 0
